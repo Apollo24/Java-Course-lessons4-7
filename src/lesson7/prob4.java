@@ -6,7 +6,7 @@ package lesson7;
 public class prob4 {
 
 
-    
+
 
 
 
