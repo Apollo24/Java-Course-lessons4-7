@@ -11,8 +11,10 @@ public class prob2 {
     {
         int[] mainarr=new int[(y-x)-1];
 
-        for (int i=0;i<mainarr.length; i++)
-            mainarr[i]=x+1;
+        for (int i=0;i<mainarr.length; i++) {
+            mainarr[i] = x + 1;
+            x++;
+        }
         return mainarr;
 
     }
@@ -27,8 +29,12 @@ public class prob2 {
         x=sc.nextInt();
         y=sc.nextInt();
 
-        int[] a = arr(x,y);
-        System.out.println("Array: ");
+        int [] a=arr(x,y);
+
+        for (int i=0; i<a.length; i++)
+        {
+            System.out.print(a[i]);
+        }
 
 
     }
