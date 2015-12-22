@@ -75,12 +75,34 @@ public class Checkers {
         board[x - 1][y - 1] = "#";
 
         if (type == 'W')
+
             board[a - 1][b - 1] = "W";
-        else if (type == 'B')
+
+
+        if (type == 'B')
             board[a - 1][b - 1] = "B";
+
+
         return board;
 
     }
+
+    public static void printboard(String[][] board)         // prints board after any turn
+    {
+
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                System.out.print(board[i][j]);
+                System.out.print("  ");
+            }
+
+            System.out.println(" ");
+
+
+        }
+    }
+
+
 
 
     public static void main(String[] args) {
@@ -89,50 +111,92 @@ public class Checkers {
         Scanner sc = new Scanner(System.in);
 
         char type; //player type B or W
-        int x = 0; //checker x position
-        int y = 0; //checker y position
-        int a = 0; //next move x coordinate
-        int b = 0; //next move y coordinate
 
+        int wx = 0; //W checker x position
+        int wy = 0; //W checker y position
+        int wa = 0; //W next move x coordinate
+        int wb = 0; //W next move y coordinate
+
+        int bx = 0; //B checker x position
+        int by = 0; //B checker y position
+        int ba = 0; //B next move x coordinate
+        int bb = 0; //B next move y coordinate
+
+        int amountw = 12; //total amount of W (initial - 12)
+        int amountb = 12; // total amount of B (initial -12)
+
+        boolean win = false;
+        boolean draw = false;
+
+        boolean wrightmove = false;
+        boolean brightmove = false;
+
+        String[][] board = initialorder();
 
         System.out.print("Welcome to Java Checkers. To start the game press 'enter'");
         sc.nextLine();
         System.out.println("The board:");
-
-        String[][] board = initialorder();
-
-        for (int i = 0; i < board.length; i++) {                      /// prints initial board
-            for (int j = 0; j < board[i].length; j++) {
-                System.out.print(board[i][j]);
-                System.out.print("  ");
-            }
-
-            System.out.println(" ");
-
-        }
+        printboard(board);
 
 
-        for (int t = 0; t < 10; t++) {
-            System.out.print("Player W, it's your turn, please enter your move.");
-            x = sc.nextInt();
-            y = sc.nextInt();
-            a = sc.nextInt();
-            b = sc.nextInt();
 
-            type = 'W';
-            makemove(x, y, a, b, board, type);
 
-            for (int i = 0; i < board.length; i++) {                      /// prints board after move
-                for (int j = 0; j < board[i].length; j++) {
-                    System.out.print(board[i][j]);
-                    System.out.print("  ");
+        while (win == false && draw == false) {
+
+
+            while (wrightmove == false) {
+                System.out.print("Player W, it's your turn, please enter your move.");
+                wx = sc.nextInt();
+                wy = sc.nextInt();
+                wa = sc.nextInt();
+                wb = sc.nextInt();
+                type = 'W';
+
+
+                if ((wa == wx + 1) && (wb == wy + 1 || wb == wy - 1)) {
+                    makemove(wx, wy, wa, wb, board, type); /// rewrites board after W move
+                    wrightmove = true;
+                } else {
+                    System.out.println("This move is invalid. Please enter a new move.");
+                    wrightmove = false;
                 }
 
-                System.out.println(" ");
 
             }
 
-        }
 
+            printboard(board);
+
+
+            while (brightmove == false) {
+                System.out.print("Player B, it's your turn, please enter your move.");
+                bx = sc.nextInt();
+                by = sc.nextInt();
+                ba = sc.nextInt();
+                bb = sc.nextInt();
+                type = 'B';
+
+
+                if ((ba == bx - 1) && (bb == by + 1 || bb == by - 1)) {
+                    makemove(bx, by, ba, bb, board, type);
+                    brightmove = true;
+                } else {
+                    System.out.println("This move is invalid. Please enter a new move.");
+                    brightmove = false;
+                }
+
+            }
+
+            printboard(board);
+
+        wrightmove = false;
+        brightmove = false;
+
+
+        }
     }
 }
+
+
+
+
