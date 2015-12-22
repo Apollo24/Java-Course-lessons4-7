@@ -103,6 +103,24 @@ public class Checkers {
     }
 
 
+    public static int getx(int input)
+    {
+        return input / 1000;
+    }
+
+    public static int gety(int input)
+    {
+        return input % 1000 / 100;
+    }
+
+    public static int geta(int input)
+    {
+        return input % 1000 / 10 % 10;
+    }
+    public static int getb(int input)
+    {
+        return input % 10;
+    }
 
 
     public static void main(String[] args) {
@@ -112,11 +130,13 @@ public class Checkers {
 
         char type; //player type B or W
 
+        int winput=0; // W coordinates input
         int wx = 0; //W checker x position
         int wy = 0; //W checker y position
         int wa = 0; //W next move x coordinate
         int wb = 0; //W next move y coordinate
 
+        int binput=0; // B coordinates input
         int bx = 0; //B checker x position
         int by = 0; //B checker y position
         int ba = 0; //B next move x coordinate
@@ -146,10 +166,11 @@ public class Checkers {
 
             while (wrightmove == false) {
                 System.out.print("Player W, it's your turn, please enter your move.");
-                wx = sc.nextInt();
-                wy = sc.nextInt();
-                wa = sc.nextInt();
-                wb = sc.nextInt();
+                winput=sc.nextInt();
+                wx = getx(winput);
+                wy = gety(winput);
+                wa = geta(winput);
+                wb = getb(winput);
                 type = 'W';
 
 
@@ -170,10 +191,11 @@ public class Checkers {
 
             while (brightmove == false) {
                 System.out.print("Player B, it's your turn, please enter your move.");
-                bx = sc.nextInt();
-                by = sc.nextInt();
-                ba = sc.nextInt();
-                bb = sc.nextInt();
+                binput=sc.nextInt();
+                bx = getx(binput);
+                by = gety(binput);
+                ba = geta(binput);
+                bb = getb(binput);
                 type = 'B';
 
 
