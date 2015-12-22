@@ -153,7 +153,7 @@ public class Checkers {
                 type = 'W';
 
 
-                if ((wa == wx + 1) && (wb == wy + 1 || wb == wy - 1)) {
+                if ((board[wx-1][wy-1]=="W") && (wa == wx + 1) && (wb == wy + 1 || wb == wy - 1)) {
                     makemove(wx, wy, wa, wb, board, type); /// rewrites board after W move
                     wrightmove = true;
                 } else {
@@ -177,7 +177,7 @@ public class Checkers {
                 type = 'B';
 
 
-                if ((ba == bx - 1) && (bb == by + 1 || bb == by - 1)) {
+                if ((board[bx-1][by-1]=="B") && (ba == bx - 1) && (bb == by + 1 || bb == by - 1)) {
                     makemove(bx, by, ba, bb, board, type);
                     brightmove = true;
                 } else {
