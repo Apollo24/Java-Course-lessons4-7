@@ -11,58 +11,23 @@ public class Checkers {
     public static String[][] initialorder() //func to create starting checkers board
     {
 
-        String[][] initial = new String[8][8];
+        String[][] initial = new String [][] {
+        {"-","-","-","-","-","-","-","-","-","-","-","-"},
+        {"-","-","1","2","3","4","5","6","7","8","-","-"},
+        {"-","1","#","W","#","W","#","W","#","W","1","-"},
+        {"-","2","W","#","W","#","W","#","W","#","2","-"},
+        {"-","3","#","W","#","W","#","W","#","W","3","-"},
+        {"-","4","#","#","#","#","#","#","#","#","4","-"},
+        {"-","5","#","#","#","#","#","#","#","#","5","-"},
+        {"-","6","B","#","B","#","B","#","B","#","6","-"},
+        {"-","7","#","B","#","B","#","B","#","B","7","-"},
+        {"-","8","B","#","B","#","B","#","B","#","8","-"},
+        {"-","-","1","2","3","4","5","6","7","8","-","-"},
+        {"-","-","-","-","-","-","-","-","-","-","-","-"}
+    };
 
 
-        //row1
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[0][j] = "#";
 
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[0][j] = "W";
-        }
-        //row2
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[1][j] = "W";
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[1][j] = "#";
-        }
-        //row3
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[2][j] = "#";
-
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[2][j] = "W";
-        }
-        //row4-5
-        for (int i = 3; i < 5; i++)
-            for (int j = 0; j < 8; j++)
-                initial[i][j] = "#";
-        //row6
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[5][j] = "B";
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[5][j] = "#";
-        }
-        //row 7
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[6][j] = "#";
-
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[6][j] = "B";
-        }
-        //row8
-        for (int j = 0; j < 8; j = j + 2) {
-            initial[7][j] = "B";
-        }
-        for (int j = 1; j < 8; j = j + 2) {
-            initial[7][j] = "#";
-        }
 
         return initial;
 
@@ -109,13 +74,13 @@ public class Checkers {
 
         board[x][y] = "#";
 
-           if ((type=='W') && (a!=7))
+           if ((type=='W') && (a!=9))
 
 
                 board[a][b] = "W";
 
 
-          if ((type=='W') && (a==7))
+          if ((type=='W') && (a==9))
 
 
                 board[a][b] = "K";
@@ -124,11 +89,11 @@ public class Checkers {
 
 
 
-        if ((type == 'B') && (a!=0))
+        if ((type == 'B') && (a!=2))
 
         board[a][b] = "B";
 
-        else if ((type=='B') && (a==0))
+        else if ((type=='B') && (a==2))
 
             board[a][b] = "Q";
 
@@ -228,21 +193,21 @@ public class Checkers {
 
     public static int getx(int input)
     {
-        return (input / 1000)-1;
+        return (input / 1000)+1;
     }
 
     public static int gety(int input)
     {
-        return (input % 1000 / 100) -1;
+        return (input % 1000 / 100) +1;
     }
 
     public static int geta(int input)
     {
-        return (input % 1000 / 10 % 10)-1;
+        return (input % 1000 / 10 % 10)+1;
     }
     public static int getb(int input)
     {
-        return (input % 10)-1;
+        return (input % 10)+1;
     }
 
 
@@ -342,8 +307,13 @@ public class Checkers {
                 type = 'B';
 
 
-                if (checkmove(bx,by,ba, bb, board, type)) {
+                if ((board[bx][by]=="B") && (checkmove(bx,by,ba, bb, board, type))) {
                     makemove(bx, by, ba, bb, board, type);
+                    brightmove = true;
+                }
+
+                else if ((board[bx][by]=="Q") && (checkkingmove(bx,by,ba, bb, board, type))) {
+                    makekingmove(bx, by, ba, bb, board, type);
                     brightmove = true;
                 }
 
