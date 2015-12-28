@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="138aef2f-8708-44d4-b2a0-3dac0465f476" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="C:\Users\Anton\Desktop\Java course tau\Java-Course-lessons4-7\out\production\untitled3\lesson8\Checkers.class" afterPath="C:\Users\Anton\Desktop\Java course tau\Java-Course-lessons4-7\out\production\untitled3\lesson8\Checkers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled3/lesson7/prob4.class" afterPath="$PROJECT_DIR$/out/production/untitled3/lesson7/prob4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson8/Checkers.java" afterPath="$PROJECT_DIR$/src/lesson8/Checkers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson7/prob4.java" afterPath="$PROJECT_DIR$/src/lesson7/prob4.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled3.iws" />
@@ -32,11 +36,14 @@
       <file leaf-file-name="Checkers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson8/Checkers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2012987">
-              <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.6441718">
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2645#2646#0" expanded="true" />
+                <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/lesson7/PROB2.java" />
         <option value="$PROJECT_DIR$/src/lesson7/prob3.java" />
         <option value="$PROJECT_DIR$/src/lesson7/prob2.java" />
-        <option value="$PROJECT_DIR$/src/lesson7/prob4.java" />
         <option value="$PROJECT_DIR$/src/lesson7/prob5.java" />
+        <option value="$PROJECT_DIR$/src/lesson7/prob4.java" />
         <option value="$PROJECT_DIR$/src/lesson8/Checkers.java" />
       </list>
     </option>
@@ -154,8 +161,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,8 +233,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -534,8 +541,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Checkers" />
-        <item index="1" class="java.lang.String" itemvalue="Application.prob5" />
-        <item index="2" class="java.lang.String" itemvalue="Application.prob4" />
+        <item index="1" class="java.lang.String" itemvalue="Application.prob4" />
+        <item index="2" class="java.lang.String" itemvalue="Application.prob5" />
         <item index="3" class="java.lang.String" itemvalue="Application.prob2 (1)" />
         <item index="4" class="java.lang.String" itemvalue="Application.prob3 (1)" />
       </list>
@@ -578,25 +585,34 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.37025797" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.82526475" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42857143" sideWeight="0.20045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39795917" sideWeight="0.15355521" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42857143" sideWeight="0.7995461" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39795917" sideWeight="0.8464448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23248054" sideWeight="0.49307036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.48411497" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -650,8 +666,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,8 +680,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson7/prob4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson7/prob3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11971831">
@@ -999,18 +1014,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson7/prob5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23943663">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson7/prob4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5690789">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson8/Checkers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2012987">
-          <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.6441718">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding>
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
           </folding>
         </state>
       </provider>
