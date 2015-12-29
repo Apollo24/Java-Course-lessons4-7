@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="138aef2f-8708-44d4-b2a0-3dac0465f476" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="C:\Users\Anton\Desktop\Java course tau\Java-Course-lessons4-7\out\production\untitled3\lesson8\Checkers.class" afterPath="C:\Users\Anton\Desktop\Java course tau\Java-Course-lessons4-7\out\production\untitled3\lesson8\Checkers.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson8/Checkers.java" afterPath="$PROJECT_DIR$/src/lesson8/Checkers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,15 +34,18 @@
       <file leaf-file-name="Checkers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson8/Checkers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.6174498">
-              <caret line="314" column="47" selection-start-line="314" selection-start-column="47" selection-end-line="314" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.5739796">
+              <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
               <folding>
                 <element signature="method#initialorder#0;class#Checkers#0" expanded="false" />
                 <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
                 <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
                 <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#makekingmove#0;class#Checkers#0" expanded="false" />
                 <element signature="method#checkeat#0;class#Checkers#0" expanded="false" />
+                <element signature="method#checkkingeat#0;class#Checkers#0" expanded="false" />
                 <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+                <element signature="method#kingeatmove#0;class#Checkers#0" expanded="false" />
                 <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
               </folding>
             </state>
@@ -127,6 +132,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="NamedScopeManager">
     <order />
   </component>
@@ -159,6 +167,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -231,8 +241,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,21 +601,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40136054" sideWeight="0.8071104" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40136054" sideWeight="0.7889561" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19217686" sideWeight="0.16263238" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24489796" sideWeight="0.18986385" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19217686" sideWeight="0.83736765" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2857143" sideWeight="0.81013614" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06807867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17549168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.48411497" order="3" side_tool="false" content_ui="tabs" />
@@ -649,14 +657,8 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lesson8/Checkers.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -674,24 +676,11 @@
             <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#makekingmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#checkeat#0;class#Checkers#0" expanded="false" />
+            <element signature="method#checkkingeat#0;class#Checkers#0" expanded="false" />
             <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
-            <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson8/Checkers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#initialorder#0;class#Checkers#0" expanded="false" />
-            <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
-            <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
-            <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
-            <element signature="method#checkeat#0;class#Checkers#0" expanded="false" />
-            <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#kingeatmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
           </folding>
         </state>
@@ -1034,17 +1023,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08179959">
+          <caret line="2116" column="0" selection-start-line="2116" selection-start-column="0" selection-end-line="2116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson8/Checkers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.6174498">
-          <caret line="314" column="47" selection-start-line="314" selection-start-column="47" selection-end-line="314" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.5739796">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
           <folding>
             <element signature="method#initialorder#0;class#Checkers#0" expanded="false" />
             <element signature="method#checkmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#checkkingmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#makemove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#makekingmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#checkeat#0;class#Checkers#0" expanded="false" />
+            <element signature="method#checkkingeat#0;class#Checkers#0" expanded="false" />
             <element signature="method#eatmove#0;class#Checkers#0" expanded="false" />
+            <element signature="method#kingeatmove#0;class#Checkers#0" expanded="false" />
             <element signature="method#printboard#0;class#Checkers#0" expanded="false" />
           </folding>
         </state>

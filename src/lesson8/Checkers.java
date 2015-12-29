@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by Anton on 12/20/2015.
+ *
+ * Checkers game - Final Project of Java Course at TAU December 2015
+ *
+
  */
 public class Checkers {
 
@@ -109,10 +113,9 @@ public class Checkers {
 
         if (type=='W')
 
-
             board[a][b] = "K";
 
-        if (type=='Q')
+        if (type=='B')
 
             board[a][b] = "Q";
 
@@ -127,11 +130,30 @@ public class Checkers {
 
         if (type=='W')
 
-            check = (board[x][y]=="W") && ((board[x+1][y+1]=="B") || (board[x+1][y-1]=="B")) &&  (a == x + 2) && (b == y + 2 || b == y - 2) && ((board[x+2][y+2]=="#" || board[x+2][y-2]=="#"));
+            check = (board[x][y]=="W") && ((board[x+1][y+1]=="B") || (board[x+1][y+1]=="Q") || (board[x+1][y-1]=="B") || (board[x+1][y-1]=="Q")) &&  (a == x + 2) && (b == y + 2 || b == y - 2) && ((board[x+2][y+2]=="#" || board[x+2][y-2]=="#"));
 
         if (type=='B')
 
-            check = (board[x][y]=="B") && ((board[x-1][y-1]=="W") || (board[x-1][y+1]=="W")) && (a == x - 2) && (b == y + 2 || b == y - 2) && ((board[x-2][y+2]=="#" || board[x-2][y-2]=="#"));
+            check = (board[x][y]=="B") && ((board[x-1][y-1]=="W") || (board[x-1][y-1]=="K") || (board[x-1][y+1]=="W") || (board[x-1][y+1]=="K")) && (a == x - 2) && (b == y + 2 || b == y - 2) && ((board[x-2][y+2]=="#" || board[x-2][y-2]=="#"));
+
+
+        return check;
+
+
+    }
+
+    public static boolean checkkingeat(int x, int y, int a, int b, String[][] board, char type) // func check king's eat move
+    {
+
+        boolean check=false;
+
+        if (type=='W')
+
+            check = ((board[x][y] == "K")  && (board[a][b] == "#")) && ((board[x-1][y-1]=="B") || (board[x-1][y+1]=="B") || (board[x+1][y-1]=="B") || (board[x+1][y+1]=="B") || (board[x-1][y-1]=="Q") || (board[x-1][y+1]=="Q" || (board[x+1][y-1]=="Q") || (board[x+1][y+1]=="Q")) && ((a == x+2) || (a==x-2)) && ((b==y+2) || (b==y-2)) && ((board[x-2][y+-2]=="#") || (board[x-2][y+2]=="#") || (board[x+2][y-2]=="#") || (board[x+2][y-2]=="#")));
+
+        if (type=='B')
+
+            check = ((board[x][y] == "Q")  && (board[a][b] == "#")) && ((board[x-1][y-1]=="W") || (board[x-1][y+1]=="W") || (board[x+1][y-1]=="W") || (board[x+1][y+1]=="W") || (board[x-1][y-1]=="K") || (board[x-1][y+1]=="K" || (board[x+1][y-1]=="K") || (board[x+1][y+1]=="K")) && ((a == x+2) || (a==x-2)) && ((b==y+2) || (b==y-2)) && ((board[x-2][y+-2]=="#") || (board[x-2][y+2]=="#") || (board[x+2][y-2]=="#") || (board[x+2][y-2]=="#")));
 
 
         return check;
@@ -149,23 +171,44 @@ public class Checkers {
         if (type == 'W' && b>y) {
 
             board[a-1][b-1]="#";
+
+            if (a!=9)
             board[a][b] = "W";
+
+            if (a==9)
+                board[a][b] = "K";
+
         }
        if (type == 'W' && b<y){
 
         board[a-1][b+1]="#";
+
+           if (a!=9)
         board[a][b] = "W";
+
+           if (a==9)
+               board[a][b] = "K";
     }
 
         if (type == 'B' && y>b) {
 
             board[a +1][b + 1] = "#";
+
+            if (a!=2)
             board[a][b] = "B";
+
+                if (a==2)
+                    board[a][b] = "Q";
         }
         if (type == 'B' && y<b)
     {
         board[a +1][b - 1] = "#";
+
+        if (a!=2)
         board[a][b] = "B";
+
+        if (a==2)
+            board[a][b] = "Q";
     }
 
         return board;
@@ -173,6 +216,59 @@ public class Checkers {
 
     }
 
+
+    public static String[][] kingeatmove(int x, int y, int a, int b, String[][] board, char type) // func makes king eat move
+    {
+        board[x][y] = "#";
+
+        if ((type=='W') && (a<x))
+        {
+            board[a][b]= "K";
+
+            if (y>b)
+            board[a+1][b+1] = "#";
+
+            if (y<b)
+                board[a+1][b-1] = "#";
+        }
+
+        if ((type=='W') && (a>x))
+        {
+            board[a][b]= "K";
+
+            if (b>y)
+                board[a-1][b-1] = "#";
+
+            if (b<y)
+                board[a-1][b+1]="#";
+        }
+
+        if ((type=='B') && (a<x))
+        {
+            board[a][b]= "Q";
+
+            if (y>b)
+                board[a+1][b+1] = "#";
+
+            if (y<b)
+                board[a+1][b-1] = "#";
+        }
+
+        if ((type=='B') && (a>x))
+        {
+            board[a][b]= "Q";
+
+            if (b>y)
+                board[a-1][b-1] = "#";
+
+            if (b<y)
+                board[a-1][b+1]="#";
+        }
+
+        return board;
+
+
+    }
 
 
     public static void printboard(String[][] board)         // prints board after any turn
@@ -233,6 +329,7 @@ public class Checkers {
         int amountw = 12; //total amount of W (initial - 12)
         int amountb = 12; // total amount of B (initial -12)
 
+
         boolean win = false;
         boolean draw = false;
 
@@ -274,12 +371,22 @@ public class Checkers {
 
 
 
-                else if (checkeat(wx,wy,wa, wb, board, type)) {
+                else if ((board[wx][wy]== "W") && (checkeat(wx,wy,wa, wb, board, type))) {
 
                     eatmove(wx, wy, wa, wb, board,type);
+                    amountb--;
                     wrightmove = true;
 
                 }
+
+                else if ((board[wx][wy]== "K") && (checkkingeat(wx,wy,wa, wb, board, type))){
+                    kingeatmove(wx,wy,wa, wb, board, type);
+                    amountb--;
+                    wrightmove = true;
+                }
+
+
+
 
 
                 else
@@ -297,6 +404,16 @@ public class Checkers {
             printboard(board);
 
 
+
+
+            if (amountb==0)
+            {
+                System.out.println("White wins");
+                win=true;
+                break;
+            }
+
+
             while (brightmove == false) {
                 System.out.print("Player B, it's your turn, please enter your move.");
                 binput=sc.nextInt();
@@ -307,7 +424,7 @@ public class Checkers {
                 type = 'B';
 
 
-                if ((board[bx][by]=="B") && (checkmove(bx,by,ba, bb, board, type))) {
+                if ((board[bx][by]=="B") && (checkmove(bx, by, ba, bb, board, type))) {
                     makemove(bx, by, ba, bb, board, type);
                     brightmove = true;
                 }
@@ -318,9 +435,18 @@ public class Checkers {
                 }
 
 
-                else if (checkeat(bx,by,ba,bb,board,type)) {
+                else if ((board[bx][by]=="B") && (checkeat(bx,by,ba,bb,board,type))) {
 
                     eatmove(bx, by, ba, bb, board,type);
+                    amountw--;
+                    brightmove = true;
+
+                }
+
+                else if ((board[bx][by]=="Q") && (checkkingeat(bx,by,ba,bb,board,type)))
+                {
+                    kingeatmove(bx,by,ba,bb,board,type);
+                    amountw--;
                     brightmove = true;
 
                 }
@@ -334,7 +460,15 @@ public class Checkers {
 
             }
 
+
             printboard(board);
+
+            if (amountw==0)
+            {
+                System.out.println("Black wins");
+                win=true;
+                break;
+            }
 
         wrightmove = false;
         brightmove = false;
@@ -342,9 +476,6 @@ public class Checkers {
 
         }
     }
-
-
-
 
 
 }
